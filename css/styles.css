@@ -1,0 +1,169 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rasa', serif;
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+hr[id="first"] {
+    margin-top: 50px;
+    padding: 2px;
+    border-top: 6px solid black;
+    border-bottom: 3px solid black;
+}
+
+hr[id="second"] {
+    margin-top: 50px;
+    border: 1px solid black;  
+}
+
+.heading {
+    display: block;
+    margin-top: 0px;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(68, 68, 82);
+    color: white;
+}
+.main-form {
+   margin: 5vw;
+}
+.latest {
+    color: grey; 
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 0;
+    min-width: 100%;
+}
+
+label {
+    font-size: 1.5rem;
+    color: grey;
+    margin-top: 50px;
+}
+
+.contact-info input:not(#zip-code),
+select {
+   display: inline-block;
+   background-color: rgba(230, 232, 233, 0.918);
+   border-radius: 5px;
+   border: none;
+   padding: 1rem;
+   min-height: 4rem;
+   margin-top: 10px;
+   margin-bottom: 25px;
+   width: 100%;
+
+}
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding-right: 10px;
+    font-size: larger;
+}
+
+input[id="zip-code"]{
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    min-height: 4rem;
+    padding: 1rem;
+    background-color: rgba(230, 232, 233, 0.918);
+    margin-top: 10px;
+} 
+
+.legend {
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+textarea{
+    background-color: rgba(230, 232, 233, 0.918);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 9rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.newsletter label {
+    display: inline-block;
+    margin-top: 20px;
+}
+input[type="checkbox"],
+input[type="radio"]{
+    margin-right: 10px;
+}
+
+
+button {
+    width: 100%;
+    background-color: rgb(45, 133, 133);
+    border-radius: 5px;
+    border: none;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.footer-label {
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    color:grey;
+    margin-bottom: 20rem;
+}
+
+textarea:focus,
+select:focus,
+.contact-info input:focus,
+.contact-info input:not(#zip-code):focus{
+    background-color: aquamarine;
+}
+
+ 
+/*Media queries*/
+@media screen and (min-width: 768px) {
+    .main-form {
+        margin: 2rem 8rem 2rem 8rem;
+    }
+
+    textarea {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .row{
+        display: flex;
+    }
+    
+
+    .column1 {
+        width: 230px;
+        position: relative;
+        bottom: 33px;
+        align-self: center;
+    }
+
+    input[id="zip-code"]{
+        width: 100%;
+   }
+}
