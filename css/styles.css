@@ -22,7 +22,7 @@ hr[id="first"] {
 }
 
 hr[id="second"] {
-    margin-top: 50px;
+    margin-top: 40px;
     border: 1px solid black;  
 }
 
@@ -34,9 +34,11 @@ hr[id="second"] {
     background-color: rgb(68, 68, 82);
     color: white;
 }
+
 .main-form {
    margin: 5vw;
 }
+
 .latest {
     color: grey; 
 }
@@ -44,7 +46,7 @@ hr[id="second"] {
 fieldset {
     border: none;
     padding: 0px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 0;
     min-width: 100%;
 }
@@ -52,44 +54,36 @@ fieldset {
 label {
     font-size: 1.5rem;
     color: grey;
-    margin-top: 50px;
 }
 
-.contact-info input:not(#zip-code),
+.contact-info input,
 select {
-   display: inline-block;
    background-color: rgba(230, 232, 233, 0.918);
    border-radius: 5px;
    border: none;
-   padding: 1rem;
-   min-height: 4rem;
+   height: 4rem;
    margin-top: 10px;
    margin-bottom: 25px;
    width: 100%;
-
+   padding: 1rem;
 }
+
 input::placeholder {
     text-align: right;
     font-style: italic;
-    padding-right: 10px;
+    padding-right: 20px;
     font-size: larger;
 }
 
 input[id="zip-code"]{
     width: 50%;
-    border-radius: 5px;
-    border: none;
-    min-height: 4rem;
-    padding: 1rem;
-    background-color: rgba(230, 232, 233, 0.918);
-    margin-top: 10px;
 } 
 
 .legend {
     color: black;
     font-size: 30px;
     font-weight: bolder;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 textarea{
@@ -100,12 +94,14 @@ textarea{
     min-height: 9rem;
     cursor: pointer;
     margin-top: 20px;
+    padding: 1rem;
 }
 
 .newsletter label {
     display: inline-block;
     margin-top: 20px;
 }
+
 input[type="checkbox"],
 input[type="radio"]{
     margin-right: 10px;
@@ -134,11 +130,15 @@ button {
 
 textarea:focus,
 select:focus,
-.contact-info input:focus,
-.contact-info input:not(#zip-code):focus{
+.contact-info input:focus {
     background-color: aquamarine;
 }
 
+select {
+    font-size:large;
+    color: grey;
+    padding-left: 10px;
+}
  
 /*Media queries*/
 @media screen and (min-width: 768px) {
@@ -148,22 +148,35 @@ select:focus,
 
     textarea {
         margin-bottom: 30px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
-    .row{
+    .row { 
         display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    
+
+    .contact-info input,
+    select {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     .column1 {
-        width: 230px;
-        position: relative;
-        bottom: 33px;
-        align-self: center;
+        display: flex;
+        height: 4rem;
+        align-items: center;
     }
 
     input[id="zip-code"]{
-        width: 100%;
-   }
+        width: 25%;
+    } 
+
+    label{
+        min-width: 200px;
+    }
+
 }
