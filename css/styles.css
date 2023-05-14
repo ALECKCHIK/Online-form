@@ -75,7 +75,7 @@ input::placeholder {
     font-size: larger;
 }
 
-input[id="zip-code"]{
+input[id="zip-code"] {
     width: 50%;
 } 
 
@@ -86,7 +86,7 @@ input[id="zip-code"]{
     margin-bottom: 1rem;
 }
 
-textarea{
+textarea {
     background-color: rgba(230, 232, 233, 0.918);
     border: none;
     width: 100%;
@@ -171,11 +171,11 @@ select {
         align-items: center;
     }
 
-    input[id="zip-code"]{
+    input[id="zip-code"] {
         width: 25%;
     } 
 
-    label{
+    label {
         min-width: 200px;
     }
 
